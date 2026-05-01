@@ -1,4 +1,72 @@
- nav { background: #26199e; padding: 15px; position: sticky; top: 0; }
-        nav a { color: white; margin-right: 15px; text-decoration: none; }
-        .content { padding: 20px; font-family: Arial, sans-serif; }
-        img { max-width: 400px; display: block; margin: 20px 0; border: 1px solid #ccc; }
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+/* Navigation Bar - Using Flexbox for better spacing */
+nav { 
+    background: #1c145f; 
+    padding: 1rem; 
+    position: sticky; 
+    top: 0; 
+    display: flex;
+    flex-wrap: wrap; /* Allows links to move to next line on small screens */
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover { 
+    background: rgba(255, 255, 255, 0.2); 
+    text-decoration: underline;
+}
+
+/* Content Container - The "Card" Look */
+.content { 
+    max-width: 900px; 
+    margin: 30px auto; 
+    padding: 40px; 
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Typography */
+h1 {
+    color: #26199e;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Image Styling - Ensuring they are responsive */
+img { 
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 25px auto; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Footer for credit */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
