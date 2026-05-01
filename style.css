@@ -1,0 +1,4 @@
+ nav { background: #26199e; padding: 15px; position: sticky; top: 0; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; }
+        .content { padding: 20px; font-family: Arial, sans-serif; }
+        img { max-width: 400px; display: block; margin: 20px 0; border: 1px solid #ccc; }
